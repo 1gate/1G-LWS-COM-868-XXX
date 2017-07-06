@@ -6,8 +6,8 @@ echo "Install LoRaWAN Server"
 set -e
 
 # Download and install debian package 
-wget https://github.com/gotthardp/lorawan-server/releases/download/v0.4.5/lorawan-server_0.4.5_all.deb
-dpkg -i lorawan-server_0.4.5_all.deb
+wget https://github.com/gotthardp/lorawan-server/releases/download/v0.4.6/lorawan-server_0.4.6_all.deb
+dpkg -i lorawan-server_0.4.6_all.deb
 
 echo "Installation completed."
 
