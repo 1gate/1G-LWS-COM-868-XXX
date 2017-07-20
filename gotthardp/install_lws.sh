@@ -16,6 +16,6 @@ echo "Installation completed."
 sed -i -e "s/Environment=LORAWAN_HOME=\/var\/lib\/lorawan-server/Environment=LORAWAN_HOME=\/home\/ogate\/lorawan-server/g" /lib/systemd/system/lorawan-server.service
 systemctl enable lorawan-server.service
 
-echo "The system will reboot in 5 seconds..."
-sleep 5
-shutdown -r now
+#echo "The system will reboot in 5 seconds..."
+#sleep 5
+#shutdown -r now
