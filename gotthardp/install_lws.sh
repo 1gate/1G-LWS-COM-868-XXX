@@ -5,6 +5,10 @@ echo "Install LoRaWAN Server"
 # Stop on the first sign of trouble
 set -e
 
+# Create the required lorawan-server directory for Mnesia database and log files
+LORAWAN_HOME="/home/ogate/lorawan-server"
+if [ ! -d "$LORAWAN_HOME" ]; then mkdir $LORAWAN_HOME; fi
+
 # Download and install debian package 
 wget https://github.com/gotthardp/lorawan-server/releases/download/v0.4.8/lorawan-server_0.4.8_all.deb
 dpkg -i lorawan-server_0.4.8_all.deb
