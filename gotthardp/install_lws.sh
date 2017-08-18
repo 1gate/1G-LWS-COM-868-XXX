@@ -10,8 +10,8 @@ LORAWAN_HOME="/home/ogate/lorawan-server"
 if [ ! -d "$LORAWAN_HOME" ]; then mkdir $LORAWAN_HOME; fi
 
 # Download and install debian package 
-wget https://github.com/gotthardp/lorawan-server/releases/download/v0.4.8/lorawan-server_0.4.8_all.deb
-dpkg -i lorawan-server_0.4.8_all.deb
+wget https://github.com/gotthardp/lorawan-server/releases/download/v0.4.9/lorawan-server_0.4.9_all.deb
+dpkg -i lorawan-server_0.4.9_all.deb
 
 echo "Installation completed."
 
