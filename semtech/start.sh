@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 # Reset SX1301
 
