@@ -6,12 +6,12 @@ echo "Install LoRaWAN Server"
 set -e
 
 # Create the required lorawan-server directory for Mnesia database and log files
-LORAWAN_HOME="/home/ogate/lorawan-server"
-if [ ! -d "$LORAWAN_HOME" ]
+LWS_DIR="/home/ogate/lorawan-server"
+if [ ! -d "$LWS_DIR" ]
 then
-mkdir $LORAWAN_HOME
-chown ogate:ogate $LORAWAN_HOME
-chmod a+rwx $LORAWAN_HOME
+mkdir $LWS_DIR
+chown ogate:ogate $LWS_DIR
+chmod a+rwx $LWS_DIR
 fi
 
 # Download and install debian package 
