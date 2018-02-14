@@ -1,0 +1,16 @@
+[Unit]
+Description=LoRaWAN Server
+After=network.target
+
+[Service]
+Type=simple
+Environment=LORAWAN_HOME=/home/ogate/lorawan-server
+Environment=LORAWAN_LOG_ROOT=/home/ogate/lorawan-server
+ExecStart=/usr/lib/lorawan-server/bin/lorawan-server
+ExecStop=/usr/lib/lorawan-server/bin/lorawanctl stop
+User=lorawan
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
