@@ -21,7 +21,7 @@ dpkg -i lorawan-server_0.4.13_all.deb
 echo "Installation completed."
 
 # Start lorawan server as a service
-cp -f lorawan-server.service /etc/systemd/system/
+cp -n lorawan-server.service /etc/systemd/system/
 systemctl enable lorawan-server.service
 
 #echo "The system will reboot in 5 seconds..."
