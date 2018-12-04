@@ -15,8 +15,8 @@ chmod a+rwx $LWS_DIR
 fi
 
 # Download and install debian package 
-wget https://github.com/gotthardp/lorawan-server/releases/download/v0.4.13/lorawan-server_0.4.13_all.deb
-dpkg -i lorawan-server_0.4.13_all.deb
+wget https://github.com/gotthardp/lorawan-server/releases/download/v0.6.3/lorawan-server_0.6.3_all.deb
+dpkg -i lorawan-server_0.6.3_all.deb
 
 echo "Installation completed."
 
